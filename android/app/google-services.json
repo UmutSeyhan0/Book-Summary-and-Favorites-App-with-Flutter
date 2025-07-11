@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "273723176822",
+    "project_id": "qrproject-aeada",
+    "storage_bucket": "qrproject-aeada.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:273723176822:android:8bd47792d2d424bce32c57",
+        "android_client_info": {
+          "package_name": "com.example.qr"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCrCsSBog6v2tVpDNrqqssUBVoEt4i69_Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
