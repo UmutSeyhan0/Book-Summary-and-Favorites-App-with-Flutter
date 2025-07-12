@@ -15,6 +15,19 @@ class Book {
     required this.imageUrl,
   });
 
+  /// Firestore'dan veri çekmek için kullanılabilir
+  factory Book.fromFirestore(Map<String, dynamic> data) {
+    return Book(
+      title: data['title'] ?? '',
+      author: data['author'] ?? '',
+      year: int.tryParse(data['year'].toString()) ?? 0,
+      pages: int.tryParse(data['pages'].toString()) ?? 0,
+      summary: data['summary'] ?? '',
+      imageUrl: data['imageUrl'] ?? '',
+    );
+  }
+
+  /// JSON'dan veya lokal veriden çekmek için kullanılabilir
   factory Book.fromMap(Map<String, dynamic> data) {
     return Book(
       title: data['title'] ?? '',
